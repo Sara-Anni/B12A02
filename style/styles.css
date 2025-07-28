@@ -85,18 +85,148 @@ nav > img{
     width: 100%;   
 }
 
+/*******our plants sections********/
+.our-plants{
+    margin-top: 120px;
+    
+}
+.card-head{
+    font-weight: bold;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.card-about{
+    font-weight: 400;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 49px;
+}
+.flower-card{
+    height: 485px;
+    width: 270px;
+}
+.card{
+    max-width: 1140px;
+    margin:0 auto ;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    row-gap: 30px;
+}
+
+.card-name{
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lily{
+    margin-right: 32px;
+    font-size: 22px;
+    font-weight:500;
+}
+
+.price{
+    margin-right: 32px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.add-to-cart{
+    background-color: #E95A08;
+    width: 270px;
+    height: 50px;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.hide{
+    display: none;
+}
 
 
 @media screen and (max-width: 576px){
+    .navbar{
+       max-width: 361px;
+       margin: 0 auto; 
+    }
     .nav-item{
         display: none;
     }
+
+    /*****banner****/
     .banner{
         flex-direction: column-reverse;
         margin-top: 28px;
- 
+        margin-left: none;
+        margin-right: none;
     }
     .banner-title{
         font-size: 24px;
     }
+
+    /*****our plants*******/
+    .our-plants{
+    margin-top: 65px;  
+    }
+
+    .card-head{
+    font-weight: bold;
+    font-size: 24px;
+    }
+
+    .card-about{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 49px;
+    height: 68px;
+    width: 336px;
+    margin-left: 35px;
+    margin-right: 28px;
+    }
+    /******cards********/
+    .flower-card{
+    height: 340px;
+    width: 171px;
+    }
+
+    .lily{
+    margin-right: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    }
+
+    .price{
+    margin-right: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    }
+
+    .add-to-cart{
+    background-color: #E95A08;
+    width: 171px;
+    height: 50px;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 30px;
+    }
+
+    .card-image{
+        height: 196px;
+        width: 171px;
+    }
+    .card{
+    max-width: 361px;
+    margin:0 auto ;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    row-gap: 28px;
+    }
+
 }
