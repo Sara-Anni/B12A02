@@ -273,10 +273,101 @@ nav > img{
       grid-row: span 2;
       height: 432px;
     }
+/***************newsletter section**********/
+.newsletter {
+      background-image: url('../assets/news-letter-bg.png');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 180px 20px;
+      color: #ffffff;
+    }
+
+    .newsletter h2 {
+      font-size: 2.5em;
+      margin-bottom: 23px;
+      font-weight: bold;
+      
+    }
+
+    .newsletter form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      background-color: #ffffff;
+      border-radius: 0px;
+      overflow: hidden;
+    }
+
+    .newsletter input[type="email"] {
+      flex: 1;
+      padding: 15px;
+      border: none;
+      font-size: 1em;
+      outline: none;
+    }
+
+    .newsletter button {
+      padding: 15px 25px;
+      background-color: #E95A08;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+/**********footer section************/
+ .footer {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 110px;
+      padding: 50px 160px;
+      background-color: #ffffff;
+      font-size: 0.9em;
+      font-weight: 400;
+    }
+
+    .footer br{
+        display: none;
+    }
+
+    .footer .logo {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .footer .logo img {
+      width: 120px;
+    }
+
+    .footer .links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 110px;
+      font-size: small;
+    }
+
+    .footer .links p {
+      margin-bottom: 26px;
+    }
+
+    .footer .social {
+      display: flex;
+      justify-content: flex-end;
+      align-items: start;
+      gap: 24px;
+    }
+
+    .footer .social img {
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
 
 
 
-/*************media query********/
+/*************media query*****************/
 
 @media screen and (max-width: 576px){
     .navbar{
@@ -293,6 +384,7 @@ nav > img{
         margin-top: 28px;
         margin-left: none;
         margin-right: none;
+        
     }
     .banner-title{
         font-size: 24px;
@@ -425,8 +517,42 @@ nav > img{
         grid-row: auto;
         height: 201px;
       }
+/************newsletter section*********/
 
-     
+      .newsletter {
+        padding: 60px 15px;
+      }
+
+      .newsletter h2 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+
+      .newsletter form{
+        height: 50px;
+        width: 321px;
+      }
+
+      .newsletter input[type="email"],
+      .newsletter button {
+        padding: 10px;
     
+      }
+     
+/***********footer section********/
 
+      
+      .footer {
+        grid-template-columns: auto;
+        padding: 50px 20px;
+        gap: 0px;
+      }
+
+      .footer .links {
+      grid-template-columns: 1fr;
+      gap: 0px;
+    }
+    .footer .social {
+        justify-content: flex-start;
+        margin-top: 20px;
 }
