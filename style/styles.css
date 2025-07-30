@@ -88,7 +88,8 @@ nav > img{
 /*******our plants sections********/
 .our-plants{
     margin-top: 120px;
-    
+    max-width: 1140px;
+    margin: 0 auto;
 }
 .card-head{
     font-weight: bold;
@@ -99,8 +100,7 @@ nav > img{
 .card-about{
     font-weight: 400;
     font-size: 22px;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-bottom: 49px;
 }
 .flower-card{
@@ -143,11 +143,140 @@ nav > img{
     font-size: 16px;
     margin-top: 24px;
 }
+/**********list section*****/
+.certified-section{
+    max-width: 1140px;
+    margin:0 auto ;
+    margin-top: 210px;
+}
+.certified-imgs{
+    position: relative;
+}
+.trusted-badge{
+    position: absolute;
+    height: 286px;
+    width: 286px;
+    margin-left: -180px;
+    margin-top: -110px;
+}
+.flower-store{
+    height: 595px;
+    width: 540px;
+}
+.div-fpl{
+    margin-left: 80px;
+}
+.FPL{
+    font-size: 50px;
+    font-weight: 700;
+}
+.list{
+    font-size: 22px;
+    font-weight: 400;
+}
 
 .hide{
     display: none;
 }
 
+/************latest deals section********/
+    .section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .section h2 span {
+      font-weight: 700;
+    }
+
+    .section p {
+      font-size: 0.95em;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: none;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .deal-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 206px;
+    }
+
+    .deal-content {
+      background-color: rgba(0,0,0,0.5);
+      height: 206px;
+      width: 373px;
+      border-radius: 22px;
+      text-align: center;
+    }
+
+    .deal-content h3 {
+      margin: 0;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-top: 65px;
+    }
+
+    .deal-content-large{
+        background-color: rgba(0,0,0,0.5);
+      height: 432px;
+      width: 750px;
+      border-radius: 22px;
+      text-align: center;
+    }
+
+    .deal-content-large a{
+      display: inline-block;
+      margin-top: 8px;
+      color: #ffffff;
+      text-decoration: underline;
+      font-weight: bold;  
+    }
+
+    .deal-content-large h3{
+        margin: 0;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-top: 170px;
+    }
+
+    .deal-content a {
+      display: inline-block;
+      margin-top: 8px;
+      color: white;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .large-card {
+      grid-row: span 2;
+      height: 432px;
+    }
+
+
+
+/*************media query********/
 
 @media screen and (max-width: 576px){
     .navbar{
@@ -185,8 +314,8 @@ nav > img{
     margin-bottom: 49px;
     height: 68px;
     width: 336px;
-    margin-left: 35px;
     margin-right: 28px;
+    margin-left: 28px;
     }
     /******cards********/
     .flower-card{
@@ -228,5 +357,76 @@ nav > img{
     grid-template-columns: repeat(2 , 1fr);
     row-gap: 28px;
     }
+/********certified section***********/
+    .certified-imgs{
+        justify-content: center;
+        align-items: center;
+        margin-left: 26px;
+
+    }
+    .trusted-badge{
+        display: none;
+    }
+    .flower-store{
+    height: 396px;
+    width: 358px;
+    }
+    .certified-section{
+        flex-direction: column;
+        margin-top: 42px;
+        margin-left: none;
+    }
+
+    .div-fpl{
+    margin-left: 0px;
+    margin-right: 23px;
+    text-align: left;
+    }
+    .div-fpl br{
+        display: none;
+    }
+    .FPL{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 25px;
+    }
+    .list{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    }
+
+/**********latest deals section***********/
+.grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        max-width: 361px;
+        margin: 0 auto;
+      }
+
+      .deal-card {
+        height: 201px;
+      }
+
+    .deal-content {
+      height: 201px;
+      width: 361px;
+    }
+
+    .deal-content-large{
+        height: 201px;
+        width: 361px;
+    }
+      .deal-content-large h3{
+        margin-top: 70px;
+        font-size: 1.2em;
+      }
+      .large-card {
+        grid-row: auto;
+        height: 201px;
+      }
+
+     
+    
 
 }
